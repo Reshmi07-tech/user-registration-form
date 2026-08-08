@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form | Mini Project 6</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">RKM</div>
+        <div class="page-title">Registration Form</div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <!-- Registration Section -->
+        <section class="registration-section">
+
+            <div class="form-card">
+
+                <h2>Register Your Details</h2>
+
+                <form id="registrationForm">
+
+                    <!-- Name -->
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter Your Name"
+                        >
+                        <small id="nameError"></small>
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="input-group">
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter Your Email"
+                        >
+                        <small id="emailError"></small>
+                    </div>
+
+
+                    <!-- Aadhaar -->
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="aadhaar"
+                            placeholder="Enter Your Aadhaar Card Number"
+                            maxlength="12"
+                        >
+                        <small id="aadhaarError"></small>
+                    </div>
+
+
+                    <!-- Gender -->
+                    <div class="gender-group">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Male"
+                            >
+                            Male
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Female"
+                            >
+                            Female
+                        </label>
+
+                    </div>
+
+                    <small id="genderError"></small>
+
+
+                    <!-- Submit -->
+                    <button type="submit" id="submitBtn">
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Right Side -->
+            <div class="details-card">
+
+                <!-- Success Message -->
+                <div
+                    id="successMessage"
+                    class="success-message"
+                ></div>
+
+
+                <h2>View Details</h2>
+
+
+                <!-- Search -->
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search"
+                    >
+
+                    <button
+                        type="button"
+                        id="searchBtn"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+
+                <!-- User Table -->
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Aadhaar</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="userTableBody">
+                            <!-- Users will appear here -->
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

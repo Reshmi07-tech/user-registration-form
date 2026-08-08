@@ -1,0 +1,356 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eaf8ff, #f8fcff);
+    color: #1e293b;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    height: 70px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 1px solid #dceef7;
+    box-shadow: 0 3px 15px rgba(56, 189, 248, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0ea5e9;
+}
+
+.page-title {
+    font-size: 17px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+
+/* ================================
+   REGISTRATION SECTION
+================================ */
+
+.registration-section {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.form-card,
+.details-card {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 18px;
+    padding: 30px;
+    border: 1px solid #dff3fc;
+    box-shadow: 0 15px 40px rgba(14, 165, 233, 0.10);
+}
+
+
+/* ================================
+   HEADINGS
+================================ */
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+
+/* ================================
+   INPUT GROUP
+================================ */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #94a3b8;
+}
+
+.input-group input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.14);
+}
+
+
+/* ================================
+   ERROR INPUT
+================================ */
+
+.input-group input.error {
+    border-color: #ef4444;
+    background: #fffafa;
+}
+
+
+/* ================================
+   SUCCESS INPUT
+================================ */
+
+.input-group input.success {
+    border-color: #38bdf8;
+}
+
+
+/* ================================
+   ERROR MESSAGE
+================================ */
+
+small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #ef4444;
+    min-height: 15px;
+}
+
+
+/* ================================
+   GENDER
+================================ */
+
+.gender-group {
+    display: flex;
+    gap: 25px;
+    margin: 10px 0 0;
+}
+
+.gender-group label {
+    font-size: 15px;
+    color: #475569;
+    cursor: pointer;
+}
+
+.gender-group input {
+    accent-color: #0ea5e9;
+    margin-right: 6px;
+}
+
+
+/* ================================
+   SUBMIT BUTTON
+================================ */
+
+#submitBtn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(14, 165, 233, 0.22);
+}
+
+#submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(14, 165, 233, 0.30);
+}
+
+
+/* ================================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message {
+    min-height: 48px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #e0f7ff;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ================================
+   SEARCH
+================================ */
+
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: 220px;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.12);
+}
+
+.search-box button {
+    padding: 12px 18px;
+    border: 1px solid #38bdf8;
+    background: #ffffff;
+    color: #0284c7;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #0ea5e9;
+    color: white;
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background: #e0f2fe;
+}
+
+th {
+    padding: 14px 10px;
+    text-align: left;
+    color: #075985;
+    font-weight: 700;
+}
+
+td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+tbody tr:hover {
+    background: #f0f9ff;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 850px) {
+
+    .registration-section {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .main-container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .form-card,
+    .details-card {
+        padding: 22px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .page-title {
+        font-size: 14px;
+    }
+
+    .search-box {
+        justify-content: stretch;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .gender-group {
+        gap: 15px;
+    }
+}
